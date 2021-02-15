@@ -2,36 +2,76 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38378954-4"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-38378954-4', 'auto');
-
+    gtag('config', 'UA-38378954-4');
     </script>
+
     <title>Axa Mei Liauw</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.jsdelivr.net/npm/emojione@4.0.0/lib/js/emojione.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojione@4.0.0/extras/css/emojione.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            place-items: center center;
+
+            /* gradient snagged from https://codepen.io/nohoid/pen/kIfto */
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+
+            -webkit-animation: rainbow 18s ease infinite;
+            -z-animation: rainbow 18s ease infinite;
+            -o-animation: rainbow 18s ease infinite;
+            animation: rainbow 18s ease infinite;
+        }
+
+        @-webkit-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-moz-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-o-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+
+        .emoji {
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+            font-size: 5em;
+            cursor: default;
+        }
+    </style>
 </head>
 
 <body>
-    <noscript>
-        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&tid=UA-38378954-4&cid=1234&dl=nojs&dt=No%20Javascript%20User">
-    </noscript>
     <main>
         <span class="emoji" aria-label="Axa Mei Liauw Rocks!">🤘</span>
     </main>
